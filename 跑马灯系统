@@ -1,0 +1,25 @@
+#跑马灯系统
+import RPi.GPIO as GPIO
+import time
+LED1=21
+LED2=20
+LED3=16
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(LED1,GPIO.OUT)
+GPIO.setup(LED2,GPIO.OUT)
+GPIO.setup(LED3,GPIO.OUT)
+
+while 1:
+        GPIO.output(LED1,GPIO.LOW)
+        GPIO.output(LED2,GPIO.HIGH)
+        GPIO.output(LED3,GPIO.HIGH)
+        time.sleep(0.1)
+        GPIO.output(LED1,GPIO.HIGH)
+        GPIO.output(LED2,GPIO.LOW)
+        GPIO.output(LED3,GPIO.HIGH
+        time.sleep(0.1)
+        GPIO.output(LED1,GPIO.HIGH)
+        GPIO.output(LED2,GPIO.HIGH)
+        GPIO.output(LED3,GPIO.LOW)
+        time.sleep(0.1)

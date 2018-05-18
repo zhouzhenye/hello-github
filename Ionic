@@ -1,0 +1,7 @@
+#Ionic CLIのインストール
+$ npm install -g ionic cordova ios-deploy
+#如果出错（用命令行往往会出错，因为很多插件下载不下来），点击前往https://blog.csdn.net/zoe_wang_ing/article/details/51679210
+#使用第四种方法，以后所有的npm可用cnpm代替，如:cnpm install ionic
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+＃然后再次输入命令安装(记得一定要临时授权，不然又出错)
+sudo npm install -g ionic cordova ios-deploy

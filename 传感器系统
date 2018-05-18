@@ -1,0 +1,14 @@
+#传感器系统
+import RPi.GPIO as GPIO
+import time
+PIN=21
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(PIN,GPIO.IN)
+while True:
+  pirValue=GPIO.input(PIN)
+  if(pirValue == True):
+    print"PIR = ON"
+  else:
+    print"PRI = OFF"
+
+  time.sleep(0.1)
